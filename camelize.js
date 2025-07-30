@@ -10,9 +10,9 @@ function camelize(string) {
     let firstWord = words.shift();
     // Function to capitalize the first letter of each word
     function capitalize(str) {
-        let capitaletter = str.charAt(0);
-        let restofword = str.slice(1);
-        return capitaletter.toUpperCase() + restofword;
+        let capitalLetter = str.charAt(0);
+        let restOfWord = str.slice(1);
+        return capitalLetter.toUpperCase() + restOfWord;
     }
     // Iterating over each element of the array to capitalize
     let capitalizedWords = words.map(capitalize);
