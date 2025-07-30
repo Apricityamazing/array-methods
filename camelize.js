@@ -5,18 +5,18 @@
 // 3. Join the array back together into a camelized string, then return the string.
 function camelize(string) {
     // Splits string into an array
-    let endingWords = string.split('-');
+    let words = string.split('-');
     // Seperates first word from the array
-    let firstWord = array.shift();
+    let firstWord = words.shift();
     // Function to capitalize the first letter of each word
     function capitalize(str) {
         let capitaletter = str.charAt(0);
         let restofword = str.slice(1);
         return capitaletter.toUpperCase() + restofword;
     }
-    // Iterating over each element of the array to capitalized 
-        let capitalizedWords = endingWords.map(capitalize);
-    return capitalizedWords;
+    // Iterating over each element of the array to capitalize
+    let capitalizedWords = words.map(capitalize);
+    return firstWord + capitalizedWords.join('');
 
 }
 console.log(camelize("border-left-width"));
