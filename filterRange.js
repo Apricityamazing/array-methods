@@ -4,19 +4,3 @@
 // 3. Check all numbers in the new array to see if they are greater than or equal to the minimum AND less than and equal to the maximum
 // 4. If numbers don't satisfy those two, remove them from the new array.
 // 5. Return the new array
-
-function filterRange(array, min, max) {
-    let filteredArray = array;
-    function filter(string, min, max) {
-        if (string >= min)  {
-            return string;
-        }
-        else if (string >= max) {   
-            return string;
-        }
-        else {
-            string.slice();
-        }
-    }
-    filteredArray.map(filter(min, max));
-}
